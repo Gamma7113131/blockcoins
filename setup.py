@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='blockcoins',
-    version='0.1.0',
+    version='0.1.2',
     author='Vegeta',
     author_email='Gamma.scratch@gmail.com',
     description='A bot to automatically farm BlockCoins on blockcoin.vercel.app',
