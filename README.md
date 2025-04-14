@@ -1,4 +1,11 @@
-# blockcoins
+# BlockCoins
+
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/uukelele-scratch/blockcoin/publish.yml)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/uukelele-scratch/blockcoin)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/uukelele-scratch/blockcoin)
+![PyPI - License](https://img.shields.io/pypi/l/blockcoin)
+![GitHub Repo stars](https://img.shields.io/github/stars/uukelele-scratch/blockcoin)
+![PyPI - Version](https://img.shields.io/pypi/v/blockcoin)
 
 Automate BlockCoin farming on https://blockcoin.vercel.app with ease.
 
