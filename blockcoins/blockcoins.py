@@ -2,7 +2,8 @@ import threading
 import time
 import random
 import json
-from blockcoin import *
+import traceback
+import blockcoin as bc
 from datetime import datetime
 
 class BlockCoinFarm:
@@ -20,12 +21,13 @@ class BlockCoinFarm:
         
     def login(self):
         try:
-            self.session = login(self.username, self.password)
+            self.session = bc.login(self.username, self.password)
             self.initial_balance = self.session.user.balance
             print(f"Logged in as: {self.session.user.display_name} | Balance: {self.initial_balance}")
             return True
         except Exception as e:
-            print(f"Login failed: {e}")
+            print("Login Failed:")
+            traceback.print_exc()
             return False
     
     def like_post(self, post):
