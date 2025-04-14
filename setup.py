@@ -11,8 +11,7 @@ setup(
     url='https://github.com/Gamma7113131/blockcoins',
     packages=find_packages(),
     install_requires=[
-        'blockcoin',
-        'requests',
+        'blockcoin'
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
