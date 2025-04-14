@@ -6,3 +6,6 @@ Automate BlockCoin farming on [blockcoin.vercel.app](https://blockcoin.vercel.ap
 
 ```bash
 pip install git+https://github.com/yourusername/blockcoins.git
+
+```bash
+pip install blockcoins
