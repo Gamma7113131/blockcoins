@@ -1,20 +1,15 @@
 [project]
 name = "blockcoins"
-version = "0.2.3"
+version = "0.2.0"
 description = "A bot to automatically farm BlockCoins on blockcoin.vercel.app"
-readme = "README.md"
+authors = [{name="Vegeta", email="Gamma.scratch@gmail.com"}]
 license = {text = "MIT"}
-authors = [{name = "Vegeta", email = "Gamma.scratch@gmail.com"}]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent"
-]
+readme = "README.md"
 dependencies = ["blockcoin"]
 requires-python = ">=3.12.8"
 
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project.urls]
