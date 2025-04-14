@@ -6,11 +6,7 @@ authors = [{name="Vegeta", email="Gamma.scratch@gmail.com"}]
 license = {text = "MIT"}
 readme = "README.md"
 dependencies = ["blockcoin"]
-requires-python = ">=3.12.8"
 
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
-
-[project.urls]
-Homepage = "https://github.com/Gamma7113131/blockcoins"
