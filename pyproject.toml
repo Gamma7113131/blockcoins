@@ -1,6 +1,21 @@
-[project]
-version = "0.2.0"
-license = {text = "MIT"}
-
 [build-system]
+requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "blockcoins"
+version = "0.2.0"
+description = "A bot to automatically farm BlockCoins on blockcoin.vercel.app"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Vegeta", email = "Gamma.scratch@gmail.com"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = ["blockcoin"]
+requires-python = ">=3.12.8"
+
+[project.urls]
+Homepage = "https://github.com/Gamma7113131/blockcoins"
