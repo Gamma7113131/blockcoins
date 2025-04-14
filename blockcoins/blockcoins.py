@@ -94,7 +94,8 @@ class BlockCoinFarm:
                 else:
                     sleep_time = 5
                     
-                print(f"[Thread {thread_id}] Error: {error_msg[:100]}...")
+                print(f"[Thread {thread_id}] Error:")
+                traceback.print_exc()
                 time.sleep(sleep_time)
             
     def get_blockcoins(self, post_texts, prices, thread_count=1, amount_of_blockcoins=None, like=1):
