@@ -1,6 +1,3 @@
-.. blockcoins documentation master file, created by
-   sphinx-quickstart on Mon Apr 22 2025.
-
 BlockCoins Library Documentation
 ===============================
 
