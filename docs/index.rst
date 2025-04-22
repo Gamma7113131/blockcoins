@@ -54,8 +54,8 @@ The login function is required to access the BlockCoin platform with your creden
 
 To log in, you need to use the `login` function provided by BlockCoins. This will return a `BlockCoinFarm` instance.
 
-# Login Example
-----------------
+Login Example:
+--------------
 
 from blockcoins import login
 
@@ -71,7 +71,7 @@ Once logged in, you can start farming by calling the `get_blockcoins` function. 
 
 You can configure the number of threads, post texts, and the price of posts. Additionally, you can set a target amount of BlockCoins you want to earn.
 
-# Start Farming Example
+Start Farming Example
 ------------------------
 
 result = farm.get_blockcoins(
@@ -84,7 +84,7 @@ result = farm.get_blockcoins(
 
 If successful, the result will contain data about your farming session, such as your initial and final balance, the number of coins earned, and the time it took to reach the target balance.
 
-# Example Result Output
+Example Result Output
 ------------------------
 
 === Farming Results ===
@@ -103,7 +103,7 @@ How to Track Your Progress
 
 You can also get detailed information about each post you created during the farming session. This includes post text, price, and which thread it was created on.
 
-# Tracking Posts Example
+Tracking Posts Example
 -------------------------
 
 for post in result['details']:
@@ -116,7 +116,7 @@ Using Multiple Threads
 
 BlockCoins supports using multiple threads to speed up the farming process. You can configure the number of threads you want to use by setting the `thread_count` parameter when calling `get_blockcoins`.
 
-# Multiple Threads Example
+Multiple Threads Example
 ---------------------------
 
 result = farm.get_blockcoins(
