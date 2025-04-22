@@ -8,9 +8,9 @@ Installation
 
 To install BlockCoins, simply use `pip`:
 
-```bash
+`bash
 pip install blockcoins
-```
+`
 
 Configuration
 -------------
