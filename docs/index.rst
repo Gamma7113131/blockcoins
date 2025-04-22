@@ -8,9 +8,7 @@ Installation
 
 To install BlockCoins, simply use `pip`:
 
-`bash
 pip install blockcoins
-`
 
 Configuration
 -------------
@@ -25,7 +23,6 @@ Configuration Example:
 
 In your `farm.py` script, define the following:
 
-```python
 # Configuration
 USERNAME = "your_username"
 PASSWORD = "your_password"
@@ -49,7 +46,6 @@ PRICES = [
     30000, 35000, 40000,
     45000, 50000
 ]
-``
 
 How to Login
 ------------
@@ -61,12 +57,10 @@ To log in, you need to use the `login` function provided by BlockCoins. This wil
 # Login Example
 ----------------
 
-```python
 from blockcoins import login
 
 # Login to the platform
 farm = login("your_username", "your_password")
-```
 
 Once you are logged in, you will have access to the farm instance, which allows you to interact with the platform, create posts, like posts, and track your progress.
 
@@ -80,7 +74,6 @@ You can configure the number of threads, post texts, and the price of posts. Add
 # Start Farming Example
 ------------------------
 
-```python
 result = farm.get_blockcoins(
     post_texts=POST_TEXTS,
     prices=PRICES,
@@ -88,7 +81,6 @@ result = farm.get_blockcoins(
     amount_of_blockcoins=3,  # Will stop when this amount is earned
     like=2  # Using post.like() method (1 for session-based liking)
 )
-```
 
 If successful, the result will contain data about your farming session, such as your initial and final balance, the number of coins earned, and the time it took to reach the target balance.
 
@@ -114,10 +106,8 @@ You can also get detailed information about each post you created during the far
 # Tracking Posts Example
 -------------------------
 
-```python
 for post in result['details']:
     print(f"Thread {post['thread']}: {post['text']} (Price: {post['price']})")
-```
 
 This will display the details of all the posts created during the farming session.
 
@@ -129,7 +119,6 @@ BlockCoins supports using multiple threads to speed up the farming process. You 
 # Multiple Threads Example
 ---------------------------
 
-```python
 result = farm.get_blockcoins(
     post_texts=POST_TEXTS,
     prices=PRICES,
@@ -137,6 +126,5 @@ result = farm.get_blockcoins(
     amount_of_blockcoins=5,  # Will stop when this amount is earned
     like=1  # Using session-based liking
 )
-```
 
 This will start 5 threads and attempt to earn 5 BlockCoins.
